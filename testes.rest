@@ -1,0 +1,59 @@
+GET http://localhost:3001/alunos HTTP/1.1
+Content-Type: application/json
+###
+
+GET http://localhost:3001/alunos/1 HTTP/1.1
+Content-Type: application/json
+###
+
+POST http://localhost:3001/alunos HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Novo Aluno",
+    "email": "novo@email.com",
+    "telefone": "28999993333"
+}
+###
+
+PUT http://localhost:3001/alunos/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Novo Aluno Alterado",
+    "email": "novoalterado@email.com",
+    "telefone": "28999994444"
+}
+###
+
+PATCH http://localhost:3001/alunos/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Novo Aluno"
+}
+###
+
+DELETE http://localhost:3001/alunos/4 HTTP/1.1
+Content-Type: application/json
+###
+
+GET http://localhost:3001/alunos?_page=2&_limit=2 HTTP/1.1
+Content-Type: application/json
+###
+
+GET http://localhost:3001/alunos?_sort=nome&_order=desc HTTP/1.1
+Content-Type: application/json
+###
+
+GET http://localhost:3001/alunos?mensalidade_gte=50&mensalidade_lte=60 HTTP/1.1
+Content-Type: application/json
+###
+
+GET http://localhost:3001/alunos?telefone_like=28 HTTP/1.1
+Content-Type: application/json
+###
+
+GET http://localhost:3001/alunos?q=tal HTTP/1.1
+Content-Type: application/json
+###

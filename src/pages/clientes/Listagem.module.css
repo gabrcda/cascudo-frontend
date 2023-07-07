@@ -1,0 +1,10 @@
+.tabela th:last-child,
+.tabela td:last-child {
+  width: 1%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.fotoColumn {
+  width: 100px;
+}

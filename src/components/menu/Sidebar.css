@@ -1,0 +1,48 @@
+.sidebar {
+    background-color: #8b0000; 
+    width: 200px;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; 
+  }
+  
+  .logo {
+    width: 40px; 
+    height: auto;
+    margin-bottom: 20px; 
+  }
+  
+  .company-name {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .nav-item {
+    margin-bottom: 10px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+  }
+  
+  .nav-link:hover {
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+  }
+
+  .page-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  
